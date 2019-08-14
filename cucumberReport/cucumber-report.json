@@ -1,0 +1,83 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 24,
+        "name": "To validate the users in online book application",
+        "description": "",
+        "id": "smoke-testing;to-validate-the-users-in-online-book-application;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 425404011,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "a user \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "usertype",
+                  "offset": 8
+                }
+              ],
+              "location": "booksteps.a_user(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 25676,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "request for users",
+            "match": {
+              "location": "booksteps.request_for_users()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4407423615,
+              "error_message": "java.lang.ClassCastException: net.serenitybdd.rest.decorators.ResponseDecorated cannot be cast to io.restassured.response.Response\r\n\tat apis.api.apisbookStore.apisMethod(apisbookStore.java:12)\r\n\tat stepdefination.booksteps.validate_the_status(booksteps.java:52)\r\n\tat ✽.Then validate the status \"200\"(src/test/resources/feature/book.feature:20)\r\n",
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "validate the status \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 21
+                }
+              ],
+              "location": "booksteps.validate_the_status(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@displayUsersAPI"
+          }
+        ]
+      }
+    ],
+    "name": "Smoke Testing",
+    "description": "",
+    "id": "smoke-testing",
+    "keyword": "Feature",
+    "uri": "src/test/resources/feature/book.feature"
+  }
+]
