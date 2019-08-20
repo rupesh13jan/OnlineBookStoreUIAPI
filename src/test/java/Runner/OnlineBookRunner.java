@@ -11,7 +11,9 @@ import org.junit.runner.RunWith;
 		,glue={"stepdefination"},
 		plugin={"pretty", "html:cucumberReport/cucumber-html-report","json:cucumberReport/cucumber-report.json"}
 		//,tags={"@loginHomePage"}
-		,tags={"@displayUsersAPI"}
+		//,tags={"@displayUsersAPI"}
+		//,tags={"@searchBooksUI"}
+		,tags={"@searchBooksAPI"}
 		)
 
 public class OnlineBookRunner {

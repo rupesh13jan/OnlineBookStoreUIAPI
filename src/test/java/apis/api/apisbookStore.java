@@ -14,4 +14,13 @@ public class apisbookStore {
 	System.out.println(response.asString());
 	
 }
+	
+	public static void apiSearchBooks(String searchCriteria)
+	{
+	com.jayway.restassured.response.Response response= given().relaxedHTTPSValidation().header("Content-Type","application/json").when().get("http://onlinebookstorecognizant.us-east-2.elasticbeanstalk.com/viewBooks/e");
+	response.then().assertThat().statusCode(200);
+	response.prettyPrint();
+	
+}
+	
 	}
