@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Smoke Testing","To validate the users in online book application","ERROR","2019-08-13T20:25:22.906+05:30","0.0","5.08"
+"Smoke Testing","To validate whether user is able to search books for the requester criteria from API","SUCCESS","2019-08-20T14:36:04.217+05:30","0.0","3.66"

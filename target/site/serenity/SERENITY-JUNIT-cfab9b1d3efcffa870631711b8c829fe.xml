@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Smoke Testing" skipped="0" tests="1" time="5.08" timestamp="2019-08-225 08:25:22"><testcase name="To validate the users in online book application"><error message="net.serenitybdd.rest.decorators.ResponseDecorated cannot be cast to io.restassured.response.Response" type="java.lang.ClassCastException">net.serenitybdd.rest.decorators.ResponseDecorated cannot be cast to io.restassured.response.Response</error><system-err>net.serenitybdd.rest.decorators.ResponseDecorated cannot be cast to io.restassured.response.Response&#13;
-apis.api.apisbookStore.apisMethod(apisbookStore.java:12)&#13;
-stepdefination.booksteps.validate_the_status(booksteps.java:52)&#13;
-✽.Then validate the status "200"(src/test/resources/feature/book.feature:20)&#13;
-</system-err></testcase></testsuite>

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>To validate the users in online book application</title>
+    <title>To validate whether user is able to search books for the requester criteria from API</title>
     <link rel="shortcut icon" href="favicon.ico">
 
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -40,7 +40,7 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
-            > To validate the users in online book application
+            > To validate whether user is able to search books for the req&hellip;
         </span>
         </div>
         <div class="rightbg"></div>
@@ -58,7 +58,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 13-08-2019 20:25</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-08-2019 14:36</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -86,7 +86,7 @@
                             <p class="tag">
                                 <span class="badge tag-badge">
                                     <i class="fa fa-tag"></i>&nbsp;<a class="tagLink"
-                                                                      href="68e1aad810816a9a0366a88afc9ae5bc.html">Displayusersapi
+                                                                      href="9fb3248c10c7f2ce04a83cff8cfd49a3.html">Searchbooksapi
                                     (tag)</a>
                                 </span>
                             </p>
@@ -98,10 +98,10 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-3x' title='ERROR'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
                             <span class="test-case-title">
-                                <span class="error-color">
-                                    To Validate The Users In Online Book Application
+                                <span class="success-color">
+                                    To Validate Whether User Is Able To Search Books For The Requester Criteria From API
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -117,7 +117,7 @@
     <div class="story-title">
         <h3 class="story-header">Scenario Outline</h3>
 
-        <div class="scenario">Given a user "&lt;usertype&gt;"<br>When request for users<br>Then validate the status "&lt;status&gt;"</div>
+        <div class="scenario">Given a user<br>When send request to fetch the books based on "&lt;searchCriteria&gt;"<br>Then the status code should be "&lt;statusCode&gt;"<br>And books based on "&lt;searchCriteria&gt;" should be displayed</div>
 
     </div>
 
@@ -131,16 +131,16 @@
                 <thead>
                 <tr>
                     <th>#</th>
-                        <th>Usertype</th>
-                        <th>Status</th>
+                        <th>Searchcriteria</th>
+                        <th>Statuscode</th>
                 </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="test-ERROR"><a href="#0">1</a></td>
-                            <td class="test-ERROR"><a href="#0">usertype</a>
+                        <td class="test-SUCCESS"><a href="#0">1</a></td>
+                            <td class="test-SUCCESS"><a href="#0">usertype</a>
                             </td>
-                            <td class="test-ERROR"><a href="#0">200</a>
+                            <td class="test-SUCCESS"><a href="#0">200</a>
                             </td>
                     </tr>
                 </tbody>
@@ -163,12 +163,12 @@
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-ERROR">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         <a name="0"/>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection0 error-icon"
+                                <i class="fa fa-plus-square-o imgstepSection0 success-icon"
                                    style="margin-left: 20px; float:left;  padding-right:5px"></i>
                             </a>
                     </td>
@@ -176,13 +176,13 @@
                         <div class="step-description">
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
-                            <span class="top-level-step">To validate the users in online book application #1: {usertype=usertype, status=200}</span>
+                            <span class="top-level-step">To validate whether user is able to search books for the requester criteria from API #1: {searchCriteria=usertype, statusCode=200}</span>
                             </a>
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">4.89s</span></td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">3.55s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
@@ -196,88 +196,28 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">Given a user "usertype"</span>
+                            <span class="nested-group-step">Given a user</span>
 
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.43s</span></td>
+                    <td width="100"><span class="nested-group-step">0.36s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                  class="nested-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">When request for users</span>
+                            <span class="nested-step">When send request to fetch the books based on "usertype"</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">3.17s</span></td>
                 </tr>
-                <tr class="test-ERROR">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-step">Then validate the status "200"</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-step">ERROR</span></td>
-                    <td width="100"><span class="nested-step">4.43s</span></td>
-                </tr>
-                    <tr class="test-ERROR">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-                            <div class="error-message ellipsis"
-                                 title='Class cast exception: net.serenitybdd.rest.decorators.ResponseDecorated cannot be cast to io.restassured.response.Response'>
-                                <pre>Class cast exception: net.serenitybdd.rest.decorators.ResponseDecorated cannot be cast to io.restassured.response.Response</pre>
-                            </div>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                            data-target="#stacktraceModal">
-                        View stack trace
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                java.lang.ClassCastException
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                    <h5>net.serenitybdd.rest.decorators.ResponseDecorated cannot be cast to io.restassured.response.Response</h5>
-                                apis.api.apisbookStore.apisMethod(apisbookStore.java
-                                    :12) <br>
-                                stepdefination.booksteps.validate_the_status(booksteps.java
-                                    :52) <br>
-                                ✽.Then validate the status "200"(src/test/resources/feature/book.feature
-                                    :20) <br>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        </td>
-                    </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
@@ -286,17 +226,17 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">GET http://onlinebookstorecognizant.us-east-2.elasticbeanstalk.com/displayUsers</span>
+                            <span class="nested-group-step">GET http://onlinebookstorecognizant.us-east-2.elasticbeanstalk.com/viewBooks/e</span>
 
                                 <span class="rest-query">
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
-                            data-target="#restModal-5">
+                            data-target="#restModal-4">
                         REST Query
                     </button>
                 </span>
                 <!-- Modal -->
-                <div class="modal fade" id="restModal-5" tabindex="-1" role="dialog"
+                <div class="modal fade" id="restModal-4" tabindex="-1" role="dialog"
                      aria-labelledby="restModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
@@ -305,7 +245,7 @@
                                         aria-label="Close"><span aria-hidden="true">&times;</span>
                                 </button>
                                 <h4 class="modal-title" id="restModalLabel">
-                                GET http://onlinebookstorecognizant.us-east-2.elasticbeanstalk.com/displayUsers
+                                GET http://onlinebookstorecognizant.us-east-2.elasticbeanstalk.com/viewBooks/e
                                 </h4>
                             </div>
                             <div class="modal-body">
@@ -318,9 +258,9 @@
                                     <h5>Request Cookies</h5>
                                     <pre></pre>
                                     <h5>Response Headers</h5>
-                                    <pre>Date: Tue, 13 Aug 2019 14:55:27 GMT<br>Server: Apache/2.4.39 (Amazon) OpenSSL/1.0.2k-fips<br>Content-Type: application/json;charset=UTF-8<br>Vary: Accept-Encoding<br>Content-Encoding: gzip<br>Keep-Alive: timeout=60, max=100<br>Connection: Keep-Alive<br>Transfer-Encoding: chunked</pre>
+                                    <pre>Date: Tue, 20 Aug 2019 09:06:07 GMT<br>Server: Apache/2.4.39 (Amazon) OpenSSL/1.0.2k-fips<br>Content-Type: application/json;charset=UTF-8<br>Vary: Accept-Encoding<br>Content-Encoding: gzip<br>Keep-Alive: timeout=60, max=100<br>Connection: Keep-Alive<br>Transfer-Encoding: chunked</pre>
                                 <h5>Response Body</h5>
-                                <pre>{<br>    &quot;1&quot;: [<br>        {<br>            &quot;username&quot;: &quot;ani&quot;,<br>            &quot;password&quot;: &quot;ani&quot;,<br>            &quot;firstname&quot;: &quot;ani&quot;,<br>            &quot;lastname&quot;: &quot;ani&quot;,<br>            &quot;contact&quot;: &quot;999&quot;,<br>            &quot;address&quot;: &quot;ani&quot;,<br>            &quot;email&quot;: &quot;ani@gmail.com&quot;,<br>            &quot;confirmpassword&quot;: null,<br>            &quot;user_id&quot;: 1,<br>            &quot;usertype&quot;: 3<br>        }<br>    ],<br>    &quot;2&quot;: [<br>        {<br>            &quot;username&quot;: &quot;praneetha&quot;,<br>            &quot;password&quot;: &quot;praneetha&quot;,<br>            &quot;firstname&quot;: &quot;Praneetha&quot;,<br>            &quot;lastname&quot;: &quot;N&quot;,<br>            &quot;contact&quot;: &quot;1239071203&quot;,<br>            &quot;address&quot;: &quot;asdasd&quot;,<br>            &quot;email&quot;: &quot;praneetha@gmail.com&quot;,<br>            &quot;confirmpassword&quot;: null,<br>            &quot;user_id&quot;: 2,<br>            &quot;usertype&quot;: 1<br>        }<br>    ],<br>    &quot;3&quot;: [<br>        {<br>            &quot;username&quot;: &quot;ani&quot;,<br>            &quot;password&quot;: &quot;ani&quot;,<br>            &quot;firstname&quot;: &quot;ani&quot;,<br>            &quot;lastname&quot;: &quot;ani&quot;,<br>            &quot;contact&quot;: &quot;999&quot;,<br>            &quot;address&quot;: &quot;ani&quot;,<br>            &quot;email&quot;: &quot;ani@gmail.com&quot;,<br>            &quot;confirmpassword&quot;: null,<br>            &quot;user_id&quot;: 3,<br>            &quot;usertype&quot;: 3<br>        }<br>    ],<br>    &quot;4&quot;: [<br>        {<br>            &quot;username&quot;: &quot;ram&quot;,<br>            &quot;password&quot;: &quot;ram&quot;,<br>            &quot;firstname&quot;: &quot;ram&quot;,<br>            &quot;lastname&quot;: &quot;ram&quot;,<br>            &quot;contact&quot;: &quot;999&quot;,<br>            &quot;address&quot;: &quot;ram&quot;,<br>            &quot;email&quot;: &quot;ram@gmail.com&quot;,<br>            &quot;confirmpassword&quot;: null,<br>            &quot;user_id&quot;: 4,<br>            &quot;usertype&quot;: 2<br>        }<br>    ],<br>    &quot;5&quot;: [<br>        {<br>            &quot;username&quot;: &quot;rupesh&quot;,<br>            &quot;password&quot;: &quot;rupesh&quot;,<br>            &quot;firstname&quot;: &quot;rupesh&quot;,<br>            &quot;lastname&quot;: &quot;kumar&quot;,<br>            &quot;contact&quot;: &quot;1234567&quot;,<br>            &quot;address&quot;: &quot;rupeshrupesh&quot;,<br>            &quot;email&quot;: &quot;rupesh@yahoo.in&quot;,<br>            &quot;confirmpassword&quot;: null,<br>            &quot;user_id&quot;: 5,<br>            &quot;usertype&quot;: 1<br>        }<br>    ],<br>    &quot;6&quot;: [<br>        {<br>            &quot;username&quot;: &quot;usertype&quot;,<br>            &quot;password&quot;: &quot;200&quot;,<br>            &quot;firstname&quot;: &quot;abc&quot;,<br>            &quot;lastname&quot;: &quot;abc&quot;,<br>            &quot;contact&quot;: &quot;12345&quot;,<br>            &quot;address&quot;: &quot;abcabc&quot;,<br>            &quot;email&quot;: &quot;abcacd&quot;,<br>            &quot;confirmpassword&quot;: null,<br>            &quot;user_id&quot;: 6,<br>            &quot;usertype&quot;: 1<br>        }<br>    ]<br>}</pre>
+                                <pre>[<br>    {<br>        &quot;id&quot;: 2,<br>        &quot;bookname&quot;: &quot;Eat&quot;,<br>        &quot;booktype&quot;: &quot;Food&quot;,<br>        &quot;author&quot;: &quot;Chethan&quot;<br>    },<br>    {<br>        &quot;id&quot;: 3,<br>        &quot;bookname&quot;: &quot;CeleryJuice&quot;,<br>        &quot;booktype&quot;: &quot;health&quot;,<br>        &quot;author&quot;: &quot;Sag&quot;<br>    },<br>    {<br>        &quot;id&quot;: 4,<br>        &quot;bookname&quot;: &quot;Quiet&quot;,<br>        &quot;booktype&quot;: &quot;technical&quot;,<br>        &quot;author&quot;: &quot;Sag&quot;<br>    }<br>]</pre>
                                     <h5>Response Cookies</h5>
                                     <pre></pre>
                             </div>
@@ -339,14 +279,44 @@
                     <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
 
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Then the status code should be "200"</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And books based on "usertype" should be displayed</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
 
                     </table>
                     </td>
                     <tr>
-                <tr class="test-ERROR">
+                <tr class="test-SUCCESS">
                     <td colspan="2"></td>
-                    <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>5.08s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>3.66s</em></span></td>
                 </tr>
 
             </table>
