@@ -12,8 +12,8 @@ import org.junit.runner.RunWith;
 		plugin={"pretty", "html:cucumberReport/cucumber-html-report","json:cucumberReport/cucumber-report.json"}
 		//,tags={"@loginHomePage"}
 		//,tags={"@displayUsersAPI"}
-		//,tags={"@searchBooksUI"}
-		,tags={"@searchBooksAPI"}
+		,tags={"@searchBooksUI"}
+		//,tags={"@searchBooksAPI"}
 		)
 
 public class OnlineBookRunner {
