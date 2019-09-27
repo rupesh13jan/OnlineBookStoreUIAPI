@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Smoke Testing online book store" skipped="0" tests="1" time="24.19" timestamp="2019-09-270 05:46:36"><testcase name="User to login in successfully and buy a book Online (E2E validation through UI)"/></testsuite>
