@@ -18,22 +18,30 @@ import org.openqa.selenium.WebElement;
 
 public class onlineBookPages extends PageObject {
 
-	
-	@FindBy(xpath="//*[@name='username']")
+	@FindBy(xpath = "//*[@name='username']")
 	WebElementFacade txtUserName;
-	
-	@FindBy(xpath="//*[@name='password']")
+
+	@FindBy(xpath = "//*[@name='password']")
 	WebElementFacade txtPassword;
-	
-	@FindBy(xpath="//*[@value='Sign In']")
+
+	@FindBy(xpath = "//*[@value='Sign In']")
 	WebElementFacade btnSigIn;
-	
-	@FindBy(xpath="//*[@id='searchBook']")
+
+	@FindBy(xpath = "//*[@id='searchBook']")
 	WebElementFacade txtSearchBox;
-	
-	@FindBy(xpath="//*[@src='/resources/Eat.jpg']")
+
+	@FindBy(xpath = "//*[@src='/resources/Eat.jpg']")
 	WebElementFacade lblSearchBooks;
-	
+
+	@FindBy(xpath = "//a[@href='CeleryJuice']")
+	WebElementFacade btnAddToCart;
+
+	@FindBy(xpath = "//button[text()='Buy Now']")
+	WebElementFacade btnBuyNow;
+
+	@FindBy(xpath = "//a[text()='Add Payment']")
+	WebElementFacade btnAddPayment;
+
 	public void signInApp(String userName, String password) throws InterruptedException {
 		getDriver().get("http://onlinebookstorecognizant.us-east-2.elasticbeanstalk.com");
 		getDriver().manage().window().maximize();
@@ -47,18 +55,34 @@ public class onlineBookPages extends PageObject {
 		String title = getDriver().getTitle();
 		Assert.assertEquals("Tile is matching", "Login Page", title);
 	}
-	
+
 	public void enterSearchCritera(String searchCriteria) {
 		txtSearchBox.sendKeys(searchCriteria);
 	}
-	
+
 	public void pressEnterKeys() {
 		txtSearchBox.sendKeys(Keys.ENTER);
 	}
-	
+
 	public void verificationSearchCritera() {
 		Assert.assertEquals(true, lblSearchBooks.isDisplayed());
 		getDriver().quit();
+	}
+
+	public void addToCartUI() {
+		waitForWithRefresh();
+		btnAddToCart.click();
+
+	}
+
+	public void buyNow() {
+		waitForWithRefresh();
+		btnBuyNow.click();
+	}
+
+	public void addPayment() {
+		waitForWithRefresh();
+		btnAddPayment.click();
 	}
 
 }
