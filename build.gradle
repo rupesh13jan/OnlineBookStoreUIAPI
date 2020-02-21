@@ -1,5 +1,5 @@
 def cucumberVersion = "1.1.23"
-def serenityVersion = "1.2.2"
+def serenityVersion = "1.8.4"
 
 repositories {
 	mavenLocal()
@@ -12,7 +12,7 @@ buildscript {
 	}
 	
 	dependencies {
-		def serenityVersion = "1.2.2"
+		def serenityVersion = "1.8.4"
 		classpath ("net.serenity-bdd:serenity-gradle-plugin:$serenityVersion")
 	}
 }
@@ -56,6 +56,14 @@ tasks.withType(Test){
 
 task runSmokeSuite(type: Test){
 include "**/*Runner/OnlineBookRunner.class"
+reports{
+junitXml.enabled=false
+html.enabled=false
+}
+}
+
+task runSmokeSuite(type: Test){
+include "**/*Runner/OnlineBookRegression.class"
 reports{
 junitXml.enabled=false
 html.enabled=false
