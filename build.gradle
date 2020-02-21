@@ -62,7 +62,7 @@ html.enabled=false
 }
 }
 
-task runSmokeSuite(type: Test){
+task runRegressionSuite(type: Test){
 include "**/*Runner/OnlineBookRegression.class"
 reports{
 junitXml.enabled=false
