@@ -10,13 +10,13 @@ import org.junit.runner.RunWith;
 		features = "src/test/resources/feature/book.feature"
 		,glue={"stepdefination"},
 		plugin={"pretty", "html:cucumberReport/cucumber-html-report","json:cucumberReport/cucumber-report.json"}
-		//,tags={"@loginHomePage"}
+		,tags={"@loginHomePage,@searchBooksUI"}
 		//,tags={"@displayUsersAPI"}
 		//,tags={"@searchBooksUI"}
 		//,tags={"@searchBooksAPI"}
 		//,tags={"@loginAPI"}
 		//,tags={"@EndToEndAPI"}
-		,tags={"@BuyBookEndToEndUI"}
+		//,tags={"@BuyBookEndToEndUI"}
 		)
 
 public class OnlineBookRunner {
