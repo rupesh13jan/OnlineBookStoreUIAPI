@@ -47,3 +47,17 @@ test {
 }
 
 gradle.startParameter.continueOnFailure = true
+
+tasks.withType(Test){
+       testLogging{
+              events 'started', 'passed'
+       }
+}
+
+task runSmokeSuite(type: Test){
+include "**/*Runner/OnlineBookRunner.class"
+reports{
+junitXml.enabled=false
+html.enabled=false
+}
+}
